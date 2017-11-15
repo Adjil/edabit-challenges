@@ -17,3 +17,9 @@ function nameShuffle(str) {
   return str.split(' ').reverse().join(' ');
 }
 nameShuffle('Richard Branson');
+
+//#4 Check If String Ending Matches Second String
+function checkEnding(str1, str2) {
+  return str1.endsWith(str2);
+}
+checkEnding('Ali', 'li');
