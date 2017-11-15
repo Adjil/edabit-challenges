@@ -33,6 +33,6 @@ findLargestNum([5, 10, 15, 20, 25, 50, 125, 1]);
 
 //#6 Calculate The Mean Average - Round to two decimal places.
 function mean(arr) {
-  return (arr.reduce((a, b) => a + b) / arr.length).toFixed(2);
+  return parseFloat((arr.reduce((a, b) => a + b) / arr.length).toFixed(2));
 }
 mean([2, 4, 6, 8]);
