@@ -23,3 +23,10 @@ function checkEnding(str1, str2) {
   return str1.endsWith(str2);
 }
 checkEnding('Ali', 'li');
+
+//#5 Find The Largest Number In An Array
+function findLargestNum(arr) {
+  return arr.reduce((previousVal, currentVal) => Math.max(previousVal, currentVal));
+  // or return Math.max(...arr) but this will have an issue with many elements, according to MDN.
+}
+findLargestNum([5, 10, 15, 20, 25, 50, 125, 1]);
