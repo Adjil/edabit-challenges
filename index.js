@@ -36,3 +36,9 @@ function mean(arr) {
   return parseFloat((arr.reduce((a, b) => a + b) / arr.length).toFixed(2));
 }
 mean([2, 4, 6, 8]);
+
+//#7 Get Word Count
+function countWords(str){
+	return str.split(' ').length;
+}
+countWords("What's the story morning glory!");
