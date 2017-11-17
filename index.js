@@ -72,3 +72,22 @@ function wurstIsBetter(str) {
   return str.replace(sausages, "Wurst");
 }
 wurstIsBetter("I like chorizos, but not sausages");
+
+//#12 Find The Smallest Number
+function findSmallestNum(arr) {
+  return Math.min(...arr);
+}
+findSmallestNum([16, 32, 64, 4, -4, -16, -32, -64]);
+
+//#13 Repeating Letters
+function doubleChar(str) {
+  return str.split("").map((letter) => letter += letter).join("");
+}
+doubleChar("All your dreams are made!");
+
+//#14 Find The Minimum, Maximum, Length And Average Values
+function minMaxLengthAverage(arr) {
+  const average = arr.reduce((accumulator, number) => accumulator + number) / arr.length;
+  return [Math.min(...arr), Math.max(...arr), arr.length, average];
+}
+minMaxLengthAverage([4, 8, 16, 32]);
