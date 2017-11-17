@@ -99,7 +99,7 @@ function addUp(num) {
 addUp(4);
 
 //#16 Alphabet Soup - Only simple sentences.
-function AlphabetSoup(str) {
+function alphabetSoup(str) {
   return str.split("").sort().join("");
 }
-AlphabetSoup("oasis");
+alphabetSoup("oasis");
