@@ -43,3 +43,13 @@ function countWords(str){
 	return str.split(' ').length;
 }
 countWords("What's the story morning glory!");
+
+//#8 Reverse The Order Of A String
+function reverse(str) {
+    let reversed = "";
+    for(let x = str.length-1; x >= 0; x--) {
+        reversed += str[x];
+    }
+    return reversed;
+}
+reverse("Step off the train all alone at dawn.");
