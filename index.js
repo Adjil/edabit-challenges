@@ -65,3 +65,10 @@ function noOdds(arr) {
   return arr.filter((number) => number % 2 === 0);
 }
 noOdds([1, 3, 5, 6, 8, 10]);
+
+//#11 Wurst is Better
+function wurstIsBetter(str) {
+  const sausages = /kielbasa|chorizos|moronga|salami|sausage|andouille|naem|merguez|gurka|snorkers|pepperoni/gi;
+  return str.replace(sausages, "Wurst");
+}
+wurstIsBetter("I like chorizos, but not sausages");
