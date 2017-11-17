@@ -59,3 +59,9 @@ function lessThanOrEqualToZero(num) {
   return num <= 0 ? true : false;
 }
 lessThanOrEqualToZero(16);
+
+//#10 Eliminate All Odd Numbers Within An Array
+function noOdds(arr) {
+  return arr.filter((number) => number % 2 === 0);
+}
+noOdds([1, 3, 5, 6, 8, 10]);
