@@ -91,3 +91,15 @@ function minMaxLengthAverage(arr) {
   return [Math.min(...arr), Math.max(...arr), arr.length, average];
 }
 minMaxLengthAverage([4, 8, 16, 32]);
+
+//#15 Add Up The Numbers From A Single Number
+function addUp(num) {
+  return num <= 0 ? 0 : num + addUp(num-1);
+}
+addUp(4);
+
+//#16 Alphabet Soup - Only simple sentences.
+function AlphabetSoup(str) {
+  return str.split("").sort().join("");
+}
+AlphabetSoup("oasis");
