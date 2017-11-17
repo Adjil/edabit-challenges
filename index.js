@@ -53,3 +53,9 @@ function reverse(str) {
     return reversed;
 }
 reverse("Step off the train all alone at dawn.");
+
+//#9 Check If Number Is Less Than Or Equal To Zero
+function lessThanOrEqualToZero(num) {
+  return num <= 0 ? true : false;
+}
+lessThanOrEqualToZero(16);
