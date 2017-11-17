@@ -103,3 +103,9 @@ function alphabetSoup(str) {
   return str.split("").sort().join("");
 }
 alphabetSoup("oasis");
+
+//#17 Return The Four Letter String(s)
+function isFourLetters(arr) {
+  return arr.filter(name => name.length === 4);
+}
+isFourLetters(["Liam", "Noel", "Bonehead", "Guigsy", "Tony"]);
