@@ -109,3 +109,9 @@ function isFourLetters(arr) {
   return arr.filter(name => name.length === 4);
 }
 isFourLetters(["Liam", "Noel", "Bonehead", "Guigsy", "Tony"]);
+
+//#18 Count Ones In Binary Representation of Integer
+function countOnes(num) {
+  return num.toString(2).split("").filter((number) => number == 1).length;
+}
+countOnes(63);
