@@ -115,3 +115,9 @@ function countOnes(num) {
   return num.toString(2).split("").filter((number) => number == 1).length;
 }
 countOnes(63);
+
+//#19 Find The Biggest And Smallest Numbers
+function minMax(arr) {
+  return [Math.min(...arr), Math.max(...arr)];
+}
+minMax([5, 8, 13, 21]);
