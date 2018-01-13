@@ -121,3 +121,20 @@ function minMax(arr) {
   return [Math.min(...arr), Math.max(...arr)];
 }
 minMax([5, 8, 13, 21]);
+
+//#20 Count Vowels
+function countVowels(str) {
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+  return str.split("").filter(letter => {
+    return vowels.includes(letter);
+  }).length;
+}
+countVowels("Morning Glory");
+
+//#21 Capitalise The Word Letter of Each Word
+function makeTitle(str) {
+  return str.split(" ").map((word) => {
+    return word.replace(word[0], word[0].toUpperCase());
+  }).join(" ");
+}
+makeTitle("definitely maybe");
